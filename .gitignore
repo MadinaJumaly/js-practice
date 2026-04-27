@@ -1,0 +1,4 @@
+.DS_Store
+.vscode/
+node_modules/
+echo ".DS_Store" >> .gitignore.DS_Store
