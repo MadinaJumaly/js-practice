@@ -24,8 +24,4 @@ function getQueryParametersValues() {
         queryParams[key] = value;
     });
 
-    // paste ?query-one=one&query-two=two at the end of url
-
-    
-
 }
