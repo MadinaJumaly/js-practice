@@ -14,14 +14,3 @@ function getUrlData() {
     query: queryParams
   };
 }
-
-function getQueryParametersValues() {
-    const { href, search } = window.location;
-
-    const varueArray = [];
-
-    new URLSearchParams(search).forEach((value, key) => {
-        queryParams[key] = value;
-    });
-
-}
