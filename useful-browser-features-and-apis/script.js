@@ -14,3 +14,34 @@ function getUrlData() {
     query: queryParams
   };
 }
+
+function getQueryParametersValues() {
+    const { href, search } = window.location;
+
+    const arr = [];
+
+    new URLSearchParams(search).forEach((value, key) => {
+        arr.push(value)
+    });
+
+    return arr;
+}
+
+
+function setLocalStorageData(data) {
+    if (typeof data !== 'string' || data === '') {
+        return false;
+    }
+
+    localStorage.setItem('key', data);
+    return true;
+}
+
+function setCookieData(data) {
+    if (typeof data !== 'string' || data === '') {
+        return false;
+    }
+
+    document.cookie = data;
+    return true;
+}
